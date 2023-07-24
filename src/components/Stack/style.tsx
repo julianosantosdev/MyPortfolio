@@ -12,12 +12,12 @@ export const StackCard = styled("div", {
   maxWidth: "10.25rem",
   borderRadius: "$1",
   padding: "1rem",
-  background: "$whiteFixed",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   position: "relative",
   transition: "200ms",
+  filter: "contrast(0.5)",
 
 
   [`& ${Text}`]: {
@@ -55,8 +55,11 @@ export const StackCard = styled("div", {
       transform: "translateY(-140%)",
       animation: `${scaleUp} 200ms`,
     },
-    scale: "105%",
+    scale: "110%",
     transition: "200ms",
-    backgroundColor: "$grey3",
+    backgroundColor: "$brand1",
+    color: "$whiteFixed",
+    filter: "brightness(1)",
+
   },
 });

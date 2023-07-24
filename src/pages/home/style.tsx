@@ -41,7 +41,7 @@ export const StackSection = styled("section", {
 export const StackCards = styled("div", {
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
-  padding: "3rem 0",
+  padding: "4rem 0",
   gap: "2rem",
 
   "@mobile": {

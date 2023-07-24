@@ -50,7 +50,7 @@ export const Project = (): JSX.Element => {
             as="h2"
             type="heading3"
             css={{ marginBottom: "$3" }}
-            color="grey1"
+            color="brand1"
           >
             {repository.name}
           </Text>

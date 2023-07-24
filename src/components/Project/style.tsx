@@ -4,6 +4,15 @@ import { Text } from "../../styles/Text"
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  transition: "200ms",
+  padding: "8px",
+
+  "&:hover": {
+    scale: "105%",
+    transition: "200ms",
+    borderRadius: "8px",
+    backgroundColor: "$grey5"
+  },
 });
 
 export const ProjectStack = styled(Flex, {
