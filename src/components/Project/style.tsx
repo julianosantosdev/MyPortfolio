@@ -11,7 +11,8 @@ export const Project = styled("article", {
     scale: "105%",
     transition: "200ms",
     borderRadius: "8px",
-    backgroundColor: "$grey5"
+    backgroundColor: "$grey5",
+    border: "1px solid $brand1"
   },
 });
 
