@@ -11,7 +11,8 @@ import {
   SiReact,
   SiStyledcomponents,
   SiNestjs,
-  SiLinuxmint
+  SiTailwindcss,
+  SiPrisma,
 } from 'react-icons/si';
 import { DiDjango } from 'react-icons/di';
 import { FaGit } from 'react-icons/fa';
@@ -39,6 +40,8 @@ export const stackData = [
     title: 'Styled Components',
     img: SiStyledcomponents
   },
+  
+  { title: 'Tailwind', img: SiTailwindcss },
 
   {
     title: 'Node JS',
@@ -55,6 +58,5 @@ export const stackData = [
   { title: 'Git', img: FaGit },
   { title: 'Python', img: SiPython },
   { title: 'Postgres', img: SiPostgresql },
-  { title: 'Trello', img: SiTrello },
-  { title: 'Linux Mint', img: SiLinuxmint }
+  { title: 'Prisma', img: SiPrisma },
 ];
