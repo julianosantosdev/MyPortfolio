@@ -34,11 +34,8 @@ export const Home = (): JSX.Element => {
               A cada bug resolvido, um aprendizado totalmente novo!
             </Text>
             <Text type='body1' color='grey6'>
-              Estudante em Desenvolvimento FullStack na Kenzie Academy Brasil.
-              Resolver problemas - ah os bugs... - me faz gostar tanto de
-              programar e me aperfeiçoar a cada dia. Mais abaixo é possível
-              visulizar meus projetos desenvolvidos e stacks que possuo
-              conhecimento.
+              Estudante de Desenvolvimento de Software Multiplataforma na FATEC-SP.
+              Desenvolvedor Web FullStack formado pela na Kenzie Academy Brasil.
             </Text>
             <Text type='body1' color='grey6'>
               Vamos juntos!
