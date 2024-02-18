@@ -34,10 +34,10 @@ export const Home = (): JSX.Element => {
               A cada bug resolvido, um aprendizado totalmente novo!
             </Text>
             <Text type='body1' color='grey6'>
-              Olá, Bem vindo ao meu portfólio!
+              Olá, bem-vindo ao meu portfólio!
             </Text>
             <Text type='body1' color='grey6'>
-              Eu sou o Juliano, atualmente sou estudante de Desenvolvimento de
+              Eu sou o Juliano. Atualmente sou estudante de Desenvolvimento de
               Software Multiplataforma na FATEC-SP e Desenvolvedor Web FullStack
               formado pela na Kenzie Academy Brasil.
             </Text>
