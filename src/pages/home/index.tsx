@@ -34,8 +34,14 @@ export const Home = (): JSX.Element => {
               A cada bug resolvido, um aprendizado totalmente novo!
             </Text>
             <Text type='body1' color='grey6'>
-              Estudante de Desenvolvimento de Software Multiplataforma na FATEC-SP.
-              Desenvolvedor Web FullStack formado pela na Kenzie Academy Brasil.
+              Olá, Bem vindo ao meu portfólio! Estudante de Desenvolvimento de
+              Software Multiplataforma na FATEC-SP. Desenvolvedor Web FullStack
+              formado pela na Kenzie Academy Brasil.
+            </Text>
+            <Text type='body1' color='grey6'>
+              Eu sou o Juliano, atualmente sou estudante de Desenvolvimento de
+              Software Multiplataforma na FATEC-SP e Desenvolvedor Web FullStack
+              formado pela na Kenzie Academy Brasil.
             </Text>
             <Text type='body1' color='grey6'>
               Vamos juntos!
