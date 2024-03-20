@@ -6,13 +6,17 @@ export const Project = styled('article', {
   marginTop: '4rem',
   transition: '200ms',
   padding: '16px',
+  backgroundColor: '#1e2125',
+  borderRadius: '8px',
 
   '&:hover': {
     scale: '105%',
     transition: '200ms',
-    borderRadius: '8px',
-    backgroundColor: '$brand2',
-    
+    backgroundColor: '$brand2'
+  },
+
+  '&:hover a': {
+    backgroundColor: '$brand1'
   }
 });
 
@@ -28,17 +32,21 @@ export const ProjectStackTech = styled('span', {
 });
 
 export const ProjectLinks = styled(Flex, {
-  marginTop: '2.25rem'
+  marginTop: '2.25rem',
+  gap: '8px'
 });
 
 export const ProjectLink = styled('a', {
+  backgroundColor: '$brand2',
   fontSize: '1rem',
-  color: '$brand1',
+  color: '$grey3',
   fontWeight: '500',
   marginRight: '$2',
   display: 'flex',
   alignItems: 'center',
-  lineHeight: '0',
+  lineHeight: '2',
+  borderRadius: '4px',
+  padding: '0 8px',
 
   '&:hover': {
     color: '$brand4'
