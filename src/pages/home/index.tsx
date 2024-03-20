@@ -30,34 +30,35 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <Text as='h1' type='heading1' color='grey5'>
+            <Text as='h1' type='heading1' color='brand4'>
               A cada bug resolvido, um aprendizado totalmente novo!
             </Text>
-            <Text type='body1' color='grey6'>
+            <Text type='body1' color='grey3'>
               Olá, bem-vindo ao meu portfólio!
             </Text>
-            <Text type='body1' color='grey6'>
+            <Text type='body1' color='grey3'>
               Eu sou o Juliano. Atualmente sou estudante de Desenvolvimento de
               Software Multiplataforma na FATEC-SP e Desenvolvedor Web FullStack
               formado pela na Kenzie Academy Brasil.
             </Text>
-            <Text type='body1' color='grey6'>
+            <Text type='body1' color='grey3'>
               Vamos juntos!
             </Text>
             <HeaderButtonsArea>
-              <Button as='a' href='#projetos'>
+              <Button type='primary' as='a' href='#projetos'>
                 Projetos
               </Button>
+              <Button type='primary' as='a' href='#tecnologias'>
+                Stacks
+              </Button>
               <Button
+                type='primary'
                 target='_blank'
                 as='a'
                 aria-label='Curriculo'
                 href={`https://1drv.ms/b/s!AheHZmNYk2qKgscKtr1eZXlJWOPdbw?e=VkOvvf`}
               >
-                Meu Currículo
-              </Button>
-              <Button as='a' href='#tecnologias'>
-                Tecnologias
+                Currículo
               </Button>
             </HeaderButtonsArea>
           </HeaderContent>
@@ -65,7 +66,7 @@ export const Home = (): JSX.Element => {
       </Header>
       <StackSection id='tecnologias'>
         <Container>
-          <Text as='h4' type='heading3' color='grey1'>
+          <Text as='h4' type='heading3' color='grey3'>
             Stacks:
           </Text>
           <StackCards>
@@ -79,10 +80,10 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as='h2' type='heading4' color='grey1'>
+              <Text as='h2' type='heading4' color='grey3'>
                 Vamos trocar uma ideia?
               </Text>
-              <Text as='p' type='body1' color='grey2'>
+              <Text as='p' type='body1' color='grey3'>
                 No Linkedin podemos trocar experiências, contar histórias e
                 aprendermos juntos!
               </Text>
@@ -96,12 +97,12 @@ export const Home = (): JSX.Element => {
               </Button>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
-              <Text type='body1' color='grey2' css={{ marginBottom: '$2' }}>
+              <Text type='heading2' color='grey3' css={{ marginBottom: '$2' }}>
                 Projetos
               </Text>
-              <Text as='h3' type='heading2' color='grey1'>
+              <Text as='h3' type='heading3' color='grey3'>
                 Originalidade e{' '}
-                <Text as='span' color='brand1' type='heading2'>
+                <Text as='span' color='grey3' type='heading2'>
                   dedicação
                 </Text>{' '}
                 em cada detalhe

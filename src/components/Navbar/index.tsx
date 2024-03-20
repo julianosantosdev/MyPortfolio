@@ -1,6 +1,6 @@
-import { useState } from "react";
-import useMedia from "use-media";
-import { userData } from "@/utils/userData";
+import { useState } from 'react';
+import useMedia from 'use-media';
+import { userData } from '@/utils/userData';
 
 import {
   Navbar as NavbarWrapper,
@@ -8,13 +8,13 @@ import {
   LogoTipoImage,
   LogoTipoText,
   NavbarLinks,
-  NavbarMobileArea,
-} from "./style";
+  NavbarMobileArea
+} from './style';
 
-import { FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-import { Button } from "@/styles/Buttons";
-import { Container } from "@/styles/Global";
+import { FaGithub, FaLinkedinIn, FaBars, FaWhatsapp } from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
+import { Button } from '@/styles/Buttons';
+import { Container } from '@/styles/Global';
 
 export interface MenuButtonOpen {
   open: Boolean;
@@ -22,7 +22,7 @@ export interface MenuButtonOpen {
 }
 
 export const NavBar = (): JSX.Element => {
-  const isWide = useMedia({ maxWidth: "991px" });
+  const isWide = useMedia({ maxWidth: '991px' });
 
   document.title = userData.nameUser;
 
@@ -41,16 +41,16 @@ export const NavBar = (): JSX.Element => {
               src={`https://github.com/${userData.githubUser}.png`}
               alt={userData.nameUser}
               title={userData.nameUser}
-              width={"48px"}
-              height={"48px"}
+              width={'48px'}
+              height={'48px'}
             />
             <LogoTipoText>{userData.nameUser}</LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
-              type="icon"
+              type='icon'
               onClick={OpenMenu}
-              aria-label={!open ? "Abrir Menu" : "Fechar Menu"}
+              aria-label={!open ? 'Abrir Menu' : 'Fechar Menu'}
             >
               {!open ? <FaBars /> : <IoClose />}
             </Button>
@@ -67,21 +67,21 @@ export const NavLinks = (): JSX.Element => {
     <NavbarLinks>
       {userData.whatsappNumber && (
         <Button
-          type="primary"
-          as="a"
-          target="_blank"
+          type='icon'
+          as='a'
+          target='_blank'
           href={`https://api.whatsapp.com/send?phone=+55${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
         >
-          Falar no whatsapp
+          <FaWhatsapp />
         </Button>
       )}
 
       {userData.githubUser && (
         <Button
-          type="icon"
-          target="_blank"
-          as="a"
-          aria-label="Github"
+          type='icon'
+          target='_blank'
+          as='a'
+          aria-label='Github'
           href={`https://github.com/${userData.githubUser}`}
         >
           <FaGithub />
@@ -90,10 +90,10 @@ export const NavLinks = (): JSX.Element => {
 
       {userData.linkedinUser && (
         <Button
-          type="icon"
-          target="_blank"
-          as="a"
-          aria-label="LinkedIn"
+          type='icon'
+          target='_blank'
+          as='a'
+          aria-label='LinkedIn'
           href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
         >
           <FaLinkedinIn />

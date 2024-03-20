@@ -13,9 +13,16 @@ import {
   SiNestjs,
   SiTailwindcss,
   SiPrisma,
+  SiCplusplus,
+  SiJsonwebtokens,
+  SiMysql,
+  SiDocker,
+  SiLinuxmint,
+  SiLinux,
+  SiWindows
 } from 'react-icons/si';
 import { DiDjango } from 'react-icons/di';
-import { FaGit } from 'react-icons/fa';
+import { FaDatabase, FaGit } from 'react-icons/fa';
 
 export const stackData = [
   {
@@ -27,7 +34,7 @@ export const stackData = [
     img: SiCss3
   },
   {
-    title: 'JS',
+    title: 'JavaScript',
     img: SiJavascript
   },
 
@@ -40,7 +47,7 @@ export const stackData = [
     title: 'Styled Components',
     img: SiStyledcomponents
   },
-  
+
   { title: 'Tailwind', img: SiTailwindcss },
 
   {
@@ -59,4 +66,11 @@ export const stackData = [
   { title: 'Python', img: SiPython },
   { title: 'Postgres', img: SiPostgresql },
   { title: 'Prisma', img: SiPrisma },
+  { title: 'C++', img: SiCplusplus },
+  { title: 'Banco de Dados', img: FaDatabase },
+  { title: 'JWT', img: SiJsonwebtokens },
+  { title: 'MySQL>', img: SiMysql },
+  { title: 'Docker', img: SiDocker },
+  { title: 'Linux', img: SiLinux },
+  { title: 'Windows', img: SiWindows }
 ];
