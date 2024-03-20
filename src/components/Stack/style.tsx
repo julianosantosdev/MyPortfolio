@@ -57,8 +57,8 @@ export const StackCard = styled("div", {
     },
     scale: "110%",
     transition: "200ms",
-    backgroundColor: "$brand1",
-    color: "$whiteFixed",
+    backgroundColor: "$gray1",
+    color: "$brand1",
     filter: "brightness(1)",
 
   },
