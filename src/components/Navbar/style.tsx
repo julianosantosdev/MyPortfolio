@@ -4,7 +4,7 @@ import { Button } from '../../styles/Buttons';
 
 export const Navbar = styled('nav', {
   background: '$grey1',
-  borderBottom: '1px solid $grey1',
+  borderBottom: '2px solid $grey2',
   position: 'fixed',
   inset: 0,
   bottom: 'auto',
