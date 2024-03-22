@@ -33,13 +33,21 @@ export const Home = (): JSX.Element => {
             <Text as='h1' type='heading1' color='brand4'>
               A cada bug resolvido, um aprendizado totalmente novo!
             </Text>
+            <Text type='body1' color='grey3'></Text>
             <Text type='body1' color='grey3'>
-              Olá, bem-vindo ao meu portfólio!
+              Eu sou o Juliano e aqui você pode encontrar um pouco mais sobre
+              mim!
             </Text>
             <Text type='body1' color='grey3'>
-              Eu sou o Juliano. Atualmente sou estudante de Desenvolvimento de
-              Software Multiplataforma na FATEC-SP e Desenvolvedor Web FullStack
-              formado pela na Kenzie Academy Brasil.
+              Atualmente estudo{' '}
+              <strong color='grey4'>
+                Desenvolvimento de Software Multiplataforma na FATEC-SP
+              </strong>{' '}
+              e sou{' '}
+              <strong>
+                Desenvolvedor Web FullStack formado pela na Kenzie Academy
+                Brasil.{' '}
+              </strong>
             </Text>
             <Text type='body1' color='grey3'>
               Vamos juntos!
