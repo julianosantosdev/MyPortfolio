@@ -21,7 +21,7 @@ export const Footer = (): JSX.Element => {
           ✋ Obrigado por acessar!
         </Text>
         <Text type='body2' color='brand4'>
-          Atualizado em: 20/03/2024
+          Atualizado em: 22/03/2024
         </Text>
       </Container>
     </FooterWrapper>
