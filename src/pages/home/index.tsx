@@ -45,7 +45,7 @@ export const Home = (): JSX.Element => {
               </strong>{' '}
               e sou{' '}
               <strong>
-                Desenvolvedor Web FullStack formado pela na Kenzie Academy
+                Desenvolvedor Web FullStack formado pela Kenzie Academy
                 Brasil.{' '}
               </strong>
             </Text>
