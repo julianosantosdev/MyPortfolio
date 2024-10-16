@@ -16,12 +16,10 @@ import {
   SiCplusplus,
   SiJsonwebtokens,
   SiMysql,
-  SiDocker,
-  SiLinuxmint,
   SiLinux,
-  SiWindows
+  SiPhp
 } from 'react-icons/si';
-import { DiDjango } from 'react-icons/di';
+import { DiDjango, DiJava } from 'react-icons/di';
 import { FaDatabase, FaGit } from 'react-icons/fa';
 
 export const stackData = [
@@ -67,10 +65,10 @@ export const stackData = [
   { title: 'Postgres', img: SiPostgresql },
   { title: 'Prisma', img: SiPrisma },
   { title: 'C++', img: SiCplusplus },
+  { title: 'PHP', img: SiPhp },
+  { title: 'JAVA', img: DiJava },
   { title: 'Banco de Dados', img: FaDatabase },
   { title: 'JWT', img: SiJsonwebtokens },
   { title: 'MySQL>', img: SiMysql },
-  { title: 'Docker', img: SiDocker },
-  { title: 'Linux', img: SiLinux },
-  { title: 'Windows', img: SiWindows }
+  { title: 'Linux', img: SiLinux }
 ];

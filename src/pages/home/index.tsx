@@ -45,8 +45,7 @@ export const Home = (): JSX.Element => {
               </strong>{' '}
               e sou{' '}
               <strong>
-                Desenvolvedor Web FullStack formado pela Kenzie Academy
-                Brasil.{' '}
+                Desenvolvedor Web FullStack formado pela Kenzie Academy Brasil.{' '}
               </strong>
             </Text>
             <Text type='body1' color='grey3'>
@@ -58,15 +57,6 @@ export const Home = (): JSX.Element => {
               </Button>
               <Button type='primary' as='a' href='#tecnologias'>
                 Stacks
-              </Button>
-              <Button
-                type='primary'
-                target='_blank'
-                as='a'
-                aria-label='Curriculo'
-                href={`https://1drv.ms/b/s!AheHZmNYk2qKgscKtr1eZXlJWOPdbw?e=VkOvvf`}
-              >
-                Currículo
               </Button>
             </HeaderButtonsArea>
           </HeaderContent>
