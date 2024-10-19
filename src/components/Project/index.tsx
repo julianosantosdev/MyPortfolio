@@ -10,6 +10,7 @@ import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 import { userData } from "@/utils/userData";
+import React from "react";
 
 interface ReposType {
   id: number;
@@ -20,7 +21,7 @@ interface ReposType {
   homepage: string;
 }
 
-export const Project = (): JSX.Element => {
+export const Project = (): React.JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
 
   useEffect(() => {

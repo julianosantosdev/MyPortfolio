@@ -3,8 +3,9 @@ import { Text } from '@/styles/Text';
 import { Button } from '@/styles/Buttons';
 import { Footer as FooterWrapper } from './style';
 import { FaAngleUp } from 'react-icons/fa';
+import React from 'react';
 
-export const Footer = (): JSX.Element => {
+export const Footer = (): React.JSX.Element => {
   return (
     <FooterWrapper>
       <Container>

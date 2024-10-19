@@ -15,13 +15,14 @@ import { FaGithub, FaLinkedinIn, FaBars, FaWhatsapp } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import { Button } from '@/styles/Buttons';
 import { Container } from '@/styles/Global';
+import React from 'react';
 
 export interface MenuButtonOpen {
   open: Boolean;
   setOpen: (value: Boolean) => void;
 }
 
-export const NavBar = (): JSX.Element => {
+export const NavBar = (): React.JSX.Element => {
   const isWide = useMedia({ maxWidth: '991px' });
 
   document.title = userData.nameUser;
