@@ -80,7 +80,7 @@ export const Project = (): React.JSX.Element => {
               </ProjectLink>
             )}
           </ProjectLinks>
-          <Text color='brand3' type='body2'>
+          <Text color='brand1' type='body2'>
             {`Última atualização: ${repository.updated_at.slice(
               8,
               10
