@@ -19,6 +19,7 @@ interface ReposType {
   description: string;
   html_url: string;
   homepage: string;
+  updated_at: String;
 }
 
 export const Project = (): React.JSX.Element => {
@@ -27,7 +28,7 @@ export const Project = (): React.JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       const data: Response = await fetch(
-        `https://api.github.com/users/${userData.githubUser}/repos?sort=pushed`
+        `https://api.github.com/users/${userData.githubUser}/repos?sort=updated`
       );
 
       const json = await data.json();
@@ -42,6 +43,8 @@ export const Project = (): React.JSX.Element => {
     };
     fetchData();
   }, []);
+
+  console.log(repositories.map((r) => r.updated_at));
 
   return (
     <>
@@ -77,6 +80,15 @@ export const Project = (): React.JSX.Element => {
               </ProjectLink>
             )}
           </ProjectLinks>
+          <Text color='brand3' type='body2'>
+            {`Última atualização: ${repository.updated_at.slice(
+              8,
+              10
+            )}/${repository.updated_at.slice(
+              5,
+              7
+            )}/${repository.updated_at.slice(0, 4)}`}
+          </Text>
         </ProjectWrapper>
       ))}
     </>
