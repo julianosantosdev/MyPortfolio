@@ -80,11 +80,22 @@ export const Home = (): React.JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as='h2' type='heading4' color='grey3'>
-                Vamos trocar uma ideia?
+                Esses são meus projetos e outros sempre estão aparecendo por
+                aqui!
               </Text>
               <Text as='p' type='body1' color='grey3'>
-                No Linkedin podemos trocar experiências, contar histórias e
-                aprendermos juntos!
+                No GitHub você pode conferir meus commits e outras informações.
+              </Text>
+              <Button
+                type='primary'
+                target='_blank'
+                as='a'
+                href={`https://github.com/${userData.githubUser}`}
+              >
+                Acessar GitHub
+              </Button>
+              <Text as='p' type='body1' color='grey3'>
+                Não se esqueça de acessar o Linkedin também!
               </Text>
               <Button
                 type='primary'
@@ -92,20 +103,20 @@ export const Home = (): React.JSX.Element => {
                 as='a'
                 href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
               >
-                Acessar perfil no LinkedIn
+                Acessar Linkedin
               </Button>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
               <Text type='heading2' color='grey3' css={{ marginBottom: '$2' }}>
                 Projetos
               </Text>
-              <Text as='h3' type='heading3' color='grey3'>
+              {/*<Text as='h3' type='heading3' color='grey3'>
                 Originalidade e{' '}
                 <Text as='span' color='grey3' type='heading2'>
                   dedicação
                 </Text>{' '}
                 em cada detalhe
-              </Text>
+              </Text> */}
               <Project />
             </ProjectsAreaContent>
           </ProjectAreaWrapperColumns>

@@ -22,7 +22,7 @@ export const Footer = (): React.JSX.Element => {
           ✋ Obrigado por acessar!
         </Text>
         <Text type='body2' color='brand4'>
-          Atualizado em: 22/03/2024
+          Atualizado em: 04/02/2025
         </Text>
       </Container>
     </FooterWrapper>

@@ -3,14 +3,14 @@ import {
   ProjectStack,
   ProjectStackTech,
   ProjectLink,
-  ProjectLinks,
-} from "./style";
+  ProjectLinks
+} from './style';
 
-import { Text } from "@/styles/Text";
-import { useEffect, useState } from "react";
-import { FaGithub, FaShare } from "react-icons/fa";
-import { userData } from "@/utils/userData";
-import React from "react";
+import { Text } from '@/styles/Text';
+import { useEffect, useState } from 'react';
+import { FaGithub, FaShare } from 'react-icons/fa';
+import { userData } from '@/utils/userData';
+import React from 'react';
 
 interface ReposType {
   id: number;
@@ -27,8 +27,8 @@ export const Project = (): React.JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       const data: Response = await fetch(
-        `https://api.github.com/users/${userData.githubUser}/repos`
-      )
+        `https://api.github.com/users/${userData.githubUser}/repos?sort=pushed`
+      );
 
       const json = await data.json();
 
@@ -47,34 +47,32 @@ export const Project = (): React.JSX.Element => {
     <>
       {repositories?.map((repository) => (
         <ProjectWrapper key={repository.id}>
-          <Text
-            as="h2"
-            type="heading3"
-            color="brand4"
-          > 
+          <Text as='h2' type='heading3' color='brand4'>
             {repository.name}
           </Text>
 
           {repository.language && (
             <ProjectStack>
-              <Text color="grey3" type="body2">Linguagem:</Text>
+              <Text color='grey3' type='body2'>
+                Linguagem:
+              </Text>
               <ProjectStackTech>
-                <Text color="brand1" type="body2">
+                <Text color='brand1' type='body2'>
                   {repository.language}
                 </Text>
               </ProjectStackTech>
             </ProjectStack>
           )}
 
-          <Text type="body1" color="grey3">
+          <Text type='body1' color='grey3'>
             {repository.description}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.html_url}>
+            <ProjectLink target='_blank' href={repository.html_url}>
               <FaGithub /> Github Code
             </ProjectLink>
             {repository.homepage && (
-              <ProjectLink target="_blank" href={repository.homepage}>
+              <ProjectLink target='_blank' href={repository.homepage}>
                 <FaShare /> Aplicação
               </ProjectLink>
             )}
