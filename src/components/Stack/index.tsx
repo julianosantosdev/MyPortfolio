@@ -1,6 +1,6 @@
-import { StackCard } from "./style";
-import { Text } from "@/styles/Text";
-import { IconType } from "react-icons/lib";
+import { StackCard } from './style';
+import { Text } from '@/styles/Text';
+import { IconType } from 'react-icons/lib';
 
 interface StackProps {
   title: string;
@@ -12,15 +12,20 @@ export const Stack = (
   { title, icon: Icon }: StackProps,
   key: number
 ): JSX.Element => {
-  const isString = typeof Icon === "string";
+  const isString = typeof Icon === 'string';
 
   return (
     <StackCard key={key}>
-      <Text>{title}</Text>
+      {/* <Text>{title}</Text> */}
       {isString ? (
-        <img src={Icon} alt={title} title={title} height="84px" width="84px" />
+        <img src={Icon} alt={title} title={title} height='84px' width='84px' />
       ) : (
-        <Icon size={84} />
+        <>
+          <Icon size={84} />
+          <Text as="p" type='body1' color="brand4">
+            {title}
+          </Text>
+        </>
       )}
     </StackCard>
   );

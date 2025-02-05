@@ -9,7 +9,7 @@ import {
   SiNodedotjs,
   SiReact,
   SiStyledcomponents,
-  SiNestjs,
+  SiNextdotjs,
   SiTailwindcss,
   SiPrisma,
   SiCplusplus,
@@ -18,10 +18,11 @@ import {
   SiLinux,
   SiPhp,
   SiMongodb,
-  SiMongoose
+  SiMongoose,
+  SiDocker
 } from 'react-icons/si';
 import { DiDjango, DiJava } from 'react-icons/di';
-import { FaDatabase, FaGit } from 'react-icons/fa';
+import { FaGit } from 'react-icons/fa';
 
 export const stackData = [
   {
@@ -47,6 +48,8 @@ export const stackData = [
     img: SiStyledcomponents
   },
 
+  { title: 'JWT', img: SiJsonwebtokens },
+
   { title: 'Tailwind', img: SiTailwindcss },
 
   {
@@ -57,8 +60,8 @@ export const stackData = [
   { title: 'Express JS', img: SiExpress },
 
   {
-    title: 'Nest JS',
-    img: SiNestjs
+    title: 'Next JS',
+    img: SiNextdotjs
   },
   { title: 'Django', img: DiDjango },
   { title: 'Python', img: SiPython },
@@ -67,11 +70,10 @@ export const stackData = [
   { title: 'C++', img: SiCplusplus },
   { title: 'PHP', img: SiPhp },
   { title: 'JAVA', img: DiJava },
-  { title: 'Banco de Dados', img: FaDatabase },
-  { title: 'JWT', img: SiJsonwebtokens },
   { title: 'MySQL', img: SiMysql },
   { title: 'MongoDB', img: SiMongodb },
   { title: 'Mongoose', img: SiMongoose },
   { title: 'Git', img: FaGit },
+  { title: 'Docker', img: SiDocker },
   { title: 'Linux', img: SiLinux }
 ];

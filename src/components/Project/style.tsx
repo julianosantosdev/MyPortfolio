@@ -6,7 +6,7 @@ export const Project = styled('article', {
   marginTop: '4rem',
   transition: '200ms',
   padding: '16px',
-  backgroundColor: '#1e2125',
+  backgroundColor: '#2d3035',
   borderRadius: '8px',
 
   '&:hover': {
